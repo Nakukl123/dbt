@@ -1,7 +1,8 @@
-sources:
+version: 2
+sources :
   - name: raw_Src # this is the source_name
     database: PRCTICE
     schema: FOODIE_FI
     tables:
-      - name: SUBSCRIPTIONS 
-  
+      - name: SUBSCRIPTIONS
+      - name: PLANS

@@ -1,0 +1,9 @@
+SELECT
+    s.CUSTOMER_ID,
+    p.PLAN_ID,
+    p.PLAN_NAME
+FROM
+    {{ source('raw_Src', 'PLANS') }} p
+JOIN
+    {{ source('raw_Src', 'SUBSCRIPTIONS') }} s
+    ON p.PLAN_ID = s.PLAN_ID
